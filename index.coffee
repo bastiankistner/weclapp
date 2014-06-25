@@ -1,1 +1,1 @@
-console.log 'ok' 
+module.exports = require './lib/weclapp.coffee'

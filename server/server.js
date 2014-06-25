@@ -1,0 +1,16 @@
+require('coffee-script/register');
+var weclapp = require('../index');
+
+var http = require('http');
+
+
+
+
+
+
+
+
+
+http.createServer(function(req, res) {
+  res.end('hello');
+}).listen(7777);
