@@ -69,49 +69,58 @@ client.customer.create({
 
 client.salesOrder.create(
   {
-    "customerId": "1856",
+    "customerId": "1348"
+    "commercialLanguage": "German"
     "deliveryAddress": {
-      "addressLine1": "Jennnnnnnnnnnnnnnnnnnnnnnnnn Huaaaaaaaaaaaaaaaaaaaang",
-      "addressLine2": "in der Luft",
-      "city": "München",
-      "countryCode": "DE",
-      "postOfficeBoxCity": "",
-      "postOfficeBoxNumber": "",
-      "postOfficeBoxZipCode": "",
-      "street1": "Balanstraße 69",
-      "street2": "",
-      "zipcode": "81541"
-    },
+      "addressLine1": "Florian Kistner"
+      "addressLine2": "addresse2"
+      "city": "Neumarkt"
+      "countryCode": "DE"
+      "postOfficeBoxCity": ""
+      "postOfficeBoxNumber": ""
+      "postOfficeBoxZipCode": ""
+      "street1": "Lärchenweg 6a"
+      "street2": ""
+      "zipcode": "92318"
+    }
     "invoiceAddress": {
-      "addressLine1": "Jennnnnnn Zahlmal",
-      "addressLine2": "a",
-      "city": "München",
-      "countryCode": "DE",
-      "postOfficeBoxCity": "e",
-      "postOfficeBoxNumber": "c",
-      "postOfficeBoxZipCode": "d",
-      "street1": "Residenzstraße 7",
-      "street2": "b",
-      "zipcode": "81000"
-    },
+      "addressLine1": "Netlight GmbH"
+      "addressLine2": "a"
+      "city": "München"
+      "countryCode": "DE"
+      "postOfficeBoxCity": "e"
+      "postOfficeBoxNumber": "c"
+      "postOfficeBoxZipCode": "d"
+      "street1": "Residenzstraße 7"
+      "street2": "strase 2"
+      "zipcode": "81333"
+    }
+    "recordAddress": {
+      "addressLine1": "Die adresse im original"
+      "city": "die stadt im original"
+      "countryCode": "DE"
+      "street1": "straße orig"
+      "zipcode": "28221"
+    }
     "orderItems": [
       {
-        "articleId": "1606",
-        "discountPercentage": "0",
-        "manualUnitPrice": false,
-        "quantity": "66"
+        "articleId": "1606" #TODO: create a map with articles | ids
+        "discountPercentage": "0"
+        "manualUnitPrice": false
+        "quantity": "8"
       }
-    ],
-    "recordAddress": {
-      "addressLine1": "Die adresse im original",
-      "city": "die stadt im original",
-      "countryCode": "DE",
-      "street1": "straße orig",
-      "zipcode": "28221"
-    },
-    "recordCurrencyName": "EUR",
-    "salesOrderPaymentType": "STANDARD",
-    "withShipment": true  
+      {
+        "articleId": "1606" #TODO: create a map with articles | ids
+        "discountPercentage": "0"
+        "manualUnitPrice": false
+        "quantity": "3"
+      }
+    ]
+    "paymentMethodId": "1933" #TODO: create a map with methods | ids
+    "shipmentMethodId": "1148" #TODO: create a map with methods | ids
+    "withShipment": true
+    "recordCurrencyName": "EUR"
+    "salesOrderPaymentType": "STANDARD"    
 })
   .then (salesOrder) ->
     console.log salesOrder
