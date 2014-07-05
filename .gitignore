@@ -4,4 +4,4 @@ npm-debug.log
 **/*.map
 .compiled
 server/** 
-server/
+server/ 
