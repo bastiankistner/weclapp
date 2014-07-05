@@ -1,6 +1,6 @@
 {
   "name": "weclapp",
-  "version": "1.0",
+  "version": "0.1.0",
   "description": "weclapp client for node.js",
   "main": "index.js",
   "private": false,
