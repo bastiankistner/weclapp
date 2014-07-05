@@ -1,6 +1,6 @@
 {
   "name": "weclapp",
-  "version": "0.0.1",
+  "version": "1.0",
   "description": "weclapp client for node.js",
   "main": "index.js",
   "scripts": {
@@ -15,5 +15,6 @@
     "q": "^1.0.1",
     "request": "^2.36.0",
     "winston": "^0.7.3"
-  }
+  },
+  "engine": "node >= 0.8"
 }
