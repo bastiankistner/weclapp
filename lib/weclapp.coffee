@@ -5,6 +5,7 @@ logger = require('./utils/logger')(module)
 
 CustomerService = require './services/customer'
 SalesOrderService = require './services/salesOrder'
+ArticleService = require './services/article'
 
 ###
   weclapp client
@@ -18,7 +19,7 @@ module.exports = class WeclappClient
     
     @customer = new CustomerService @_rest
     @salesOrder = new SalesOrderService @_rest
-  
+    @article = new ArticleService @_rest
     
     
   ###
